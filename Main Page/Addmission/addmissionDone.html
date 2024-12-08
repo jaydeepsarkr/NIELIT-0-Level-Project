@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Successful</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-image: url(https://media.istockphoto.com/id/995955626/photo/diya-lamps-on-a-reflective-base-with-glittering-bokeh.jpg?s=2048x2048&w=is&k=20&c=T3q-c9DlZ7g11TiokPxqfUSQdvzADDMec4a4mjTmqk4=);
+        color: #333;
+        text-align: center;
+        padding: 50px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        overflow: hidden; /* Hide overflow to prevent horizontal scrollbar */
+        position: relative;
+      }
+
+      .container {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 10 10 20px rgba(121, 29, 29, 0.2);
+        max-width: 400px;
+        margin: 0 auto;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: slideIn 0.8s ease-in-out forwards,
+          topAnimation 2s ease-in-out infinite alternate;
+      }
+
+      @keyframes slideIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes topAnimation {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+      p {
+        color: #333;
+
+        font-weight: bold;
+        margin-bottom: 20px;
+        animation: colorChange 5s linear infinite alternate;
+      }
+
+      h2 {
+        color: #333;
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        animation: colorChange 5s linear infinite alternate;
+      }
+
+      @keyframes colorChange {
+        0%,
+        100% {
+          color: #333;
+        }
+
+        50% {
+          color: #ff6347; /* Tomato color */
+        }
+      }
+
+      p {
+        color: #555;
+        margin-bottom: 20px;
+        animation: fadeIn 2s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      a:hover {
+        background-color: #2980b9;
+      }
+
+      .cracker {
+        position: absolute;
+        width: 20px;
+        height: 40px;
+        background-color: #524f41;
+        border-radius: 5px;
+        animation: crackerFall 2s linear infinite;
+      }
+
+      .cracker1 {
+        left: 10%;
+        bottom: -50px;
+        animation-delay: 0.5s;
+      }
+
+      .cracker2 {
+        left: 30%;
+        bottom: -50px;
+        animation-delay: 1s;
+      }
+
+      .cracker3 {
+        left: 50%;
+        bottom: -50px;
+        animation-delay: 1.5s;
+      }
+
+      .cracker4 {
+        left: 70%;
+        bottom: -50px;
+        animation-delay: 2s;
+      }
+
+      .cracker5 {
+        left: 90%;
+        bottom: -50px;
+        animation-delay: 2.5s;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Addmission Success!</h2>
+      <p>Your Addmission Has Been Successfully Completed.</p>
+      <p>To See The List Of Addmission Login</p>
+      <a href="../Login-and-Register/register.html">Login</a>
+
+      <!-- Static crackers -->
+      <div class="cracker cracker1"></div>
+      <div class="cracker cracker2"></div>
+      <div class="cracker cracker3"></div>
+      <div class="cracker cracker4"></div>
+      <div class="cracker cracker5"></div>
+    </div>
+  </body>
+</html>

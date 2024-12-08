@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>addmission Form</title>
+    <meta
+      name="viewport"
+      content="width=device-width,
+      initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="main-addmison.css" />
+    <script src="main-addmission.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="form-title">Addmission Here</h1>
+      <form onsubmit="formSubmited(event)">
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <label for="fullName">Full Name</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Enter Full Name"
+              required
+            />
+          </div>
+          <div class="user-input-box">
+            <label for="username">Father's Name</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Enter your fathers name"
+              required
+            />
+          </div>
+          <div class="user-input-box">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter Email"
+              required
+            />
+          </div>
+          <div class="user-input-box">
+            <label for="phoneNumber">Phone Number</label>
+            <input
+              type="text"
+              id="phoneNumber"
+              name="phoneNumber"
+              placeholder="Enter Phone Number"
+              required
+              
+            />
+          </div>
+          <div class="user-input-box">
+            <select name="matricDivision" id="password">
+              <option value="matricDivision" disabled selected>
+                Select MatricDivision
+              </option>
+              <option value="First">First</option>
+              <option value="Second">Second</option>
+              <option value="Third">Third</option>
+            </select>
+          </div>
+          <div class="user-input-box">
+            <select name="Stream" id="confirmPassword">
+              <option value="" disabled selected>Select Stream</option>
+              <option value="Arts">Arts</option>
+              <option value="Commerce">Commerce</option>
+              <option value="Science">Science</option>
+            </select>
+          </div>
+        </div>
+        <div class="box">
+          <input type="checkbox" id="register-check" />
+          <label for="register-check"> Remember Me</label>
+        </div>
+        <div class="form-submit-btn">
+          <input type="submit" value="Register" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

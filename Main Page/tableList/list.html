@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission List</title>
+    <script src="list.js"></script>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th,
+      td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+      button:hover {
+        background-color: #2980b9;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <i><h1>Admission List</h1></i>
+    </center>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Created At</th>
+          <th>Full Name</th>
+          <th>Email</th>
+          <th>Father's Name</th>
+          <th>Phone Number</th>
+          <th>Matric Result</th>
+          <th>Stream</th>
+        </tr>
+      </thead>
+      <tbody id="myTable"></tbody>
+    </table>
+    <a href="http://localhost:5000/file" download
+      ><button>Download List</button></a
+    >
+  </body>
+</html>
